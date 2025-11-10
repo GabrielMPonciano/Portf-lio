@@ -1,0 +1,36 @@
+Fazendo a média
+
+#include<stdio.h>
+
+int main(){
+    
+    //Usando números inteiros para declarar as variáveis
+    char nomedoaluno[10];
+    int nota1, nota2, nota3;
+    int media;
+    
+    printf("Progama pra cáculo de média escolar\n");
+    
+    printf("Digite o nome do aluno \n", nomedoaluno);
+    scanf("%s", &nomedoaluno);
+    
+    printf("Digite a primeira nota \n", nota1);
+    scanf("%d", &nota1);
+    
+    printf("Digite a segunda nota \n", nota2);
+    scanf("%d", &nota2);
+    
+    printf("Digite a terceira nota \n", nota3);
+    scanf("%d", &nota3);
+    
+    media = (nota1 + nota2 + nota3) / 3;
+    
+    printf("Nome do aluno: %s\n", nomedoaluno);
+    printf("Nota 1: %d\n", nota1);
+    printf("Nota 2: %d\n", nota2);
+    printf("Nota 3: %d\n", nota3);
+    printf("Média das notas: %d\n", media);
+    
+    return 0;
+    
+}       
