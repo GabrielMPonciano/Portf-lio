@@ -1,0 +1,198 @@
+Super trunfo
+
+#include <stdio.h>
+
+int main() {
+
+	/*Declarando o tipo de variC!veis para as duas cartas e dando nome a elas*/
+
+	char estadocarta1, estadocarta2[10];
+	char codigocarta1, codigocarta2[10];
+	char nomecarta1, nomecarta2 [30];
+	int populacaocarta1, populacaocarta2;
+	float areacidadecarta1, areacidadecarta2;
+	float PIBcarta1, PIBcarta2;
+	int pontosturisticoscarta1, pontosturisticoscarta2;
+	float densidadepopulacionalcarta1, densidadepopulacionalcarta2, PIBpercapitacarta1, PIBpercapitacarta2;
+	float superpodercarta1, superpodercarta2;
+	int vitoriaA;
+	int vitoriaB;
+
+	/*InteraC'C#o do usuC!rio com a Carta 1, usando printf e scanf*/
+
+	printf("Carta 1\n");
+
+	printf("Digite o estado: \n");
+	scanf("%s", &estadocarta1);
+
+
+	printf("Digite o cC3digo da carta\n");
+	scanf("%s", &codigocarta1);
+
+
+	printf("Digite o nome da cidade: \n");
+	scanf("%s", &nomecarta1);
+
+
+	printf("Digite a populaC'C#o da cidade: \n");
+	scanf("%d", &populacaocarta1);
+
+
+	printf("Digite a C!rea total da cidade: \n");
+	scanf("%f", &areacidadecarta1);
+
+
+	printf("Digite o PIB da cidade: \n");
+	scanf("%f", &PIBcarta1);
+
+
+	printf("Digite o total de pontos turC-sticos da cidade: \n");
+	scanf("%d", &pontosturisticoscarta1);
+
+
+	// CC!lculo da Densidade Populacional e PIB per Capita para a Carta 1
+	densidadepopulacionalcarta1 = populacaocarta1 / areacidadecarta1;
+	PIBpercapitacarta1 = (PIBcarta1 * 1000000000) / populacaocarta1; // PIB em reais
+
+	//Calculando o Super poder
+
+	superpodercarta1 = (float)populacaocarta1 + areacidadecarta1 + PIBcarta1 + (float)pontosturisticoscarta1 +
+	                   densidadepopulacionalcarta1 + PIBpercapitacarta1;
+
+	/*VisualizaC'C#o das informaC'C5es que o usC!rio digitou no teclado. Cnica dC:vida que ficou,
+	foi sobre como deixar o estado e o cC3digo juntos sem a vC-rgula.*/
+
+	printf("Carta 1\n");
+
+	printf("Estado: %s\n", estadocarta1);
+
+	printf("CC3digo: %s %s\n", estadocarta1, codigocarta1);
+
+	printf("Nome da cidade: %c\n", nomecarta1);
+
+	printf("PopulaC'C#o total: %d\n", populacaocarta1);
+
+	printf("Crea total da cidade: %f KMB2\n", areacidadecarta1);
+
+	printf("PIB total: %f bilhC5es de reais\n", PIBcarta1);
+
+	printf("NC:mero de pontos turC-sticos: %d\n", pontosturisticoscarta1);
+
+	printf("Densidade populacional: %.2f habitantes por kmB2\n", densidadepopulacionalcarta1);
+
+	printf("PIB per capita: %.2f reais\n", PIBpercapitacarta1);
+
+	printf("Super poder carta 1: %f\n", superpodercarta1);
+
+	/*InteraC'C#o do usuC!rio com a Carta 2, usando printf e scanf*/
+
+	printf("Carta 2\n");
+
+	printf("Digite o estado: \n");
+	scanf("%c", &estadocarta2);
+
+
+	printf("Digite o cC3digo da carta\n");
+	scanf("%c", &codigocarta2);
+
+
+	printf("Digite o nome da cidade: \n");
+	scanf("%c", &nomecarta2);
+
+
+	printf("Digite a populaC'C#o da cidade: \n");
+	scanf("%d", &populacaocarta2);
+
+
+	printf("Digite a C!rea total da cidade: \n");
+	scanf("%f", &areacidadecarta2);
+
+
+	printf("Digite o PIB da cidade: \n");
+	scanf("%f", &PIBcarta2);
+
+
+	printf("Digite o total de pontos turC-sticos da cidade: \n");
+	scanf("%d", &pontosturisticoscarta2);
+
+
+	// CC!lculo da Densidade Populacional e PIB per Capita para a Carta 1
+	densidadepopulacionalcarta2 = populacaocarta2 / areacidadecarta2;
+	PIBpercapitacarta2 = (PIBcarta2 * 1000000000) / populacaocarta2; // PIB em reais
+
+	//Calculando o Super poder
+
+	superpodercarta2 = (float)populacaocarta2 + areacidadecarta2 + PIBcarta2 + (float)pontosturisticoscarta2 +
+	                   densidadepopulacionalcarta2 + PIBpercapitacarta2;
+
+	/*VisualizaC'C#o das informaC'C5es que o usC!rio digitou no teclado. Cnica dC:vida que ficou,
+	foi sobre como deixar o estado e o cC3digo juntos sem a vC-rgula.*/
+
+	printf("Carta 2\n");
+
+	printf("Estado: %c\n", estadocarta2);
+
+	printf("CC3digo: %c %c\n", estadocarta2, codigocarta2);
+
+	printf("Nome da cidade: %c\n", nomecarta2);
+
+	printf("PopulaC'C#o total: %d\n", populacaocarta2);
+
+	printf("Crea total da cidade: %f KMB2\n", areacidadecarta2);
+
+	printf("PIB total: %f bilhC5es de reais\n", PIBcarta2);
+
+	printf("NC:mero de pontos turC-sticos: %d\n", pontosturisticoscarta2);
+
+	printf("Densidade populacional: %.2f habitantes por kmB2\n", densidadepopulacionalcarta2);
+
+	printf("PIB per capita: %.2f reais\n", PIBpercapitacarta2);
+
+	//ComparaC'C#o das cartas
+
+	vitoriaA = populacaocarta1 > populacaocarta2;
+	vitoriaB = populacaocarta1 < populacaocarta2;
+
+	printf("PopulaC'C#o carta 1 vence", populacaocarta1, populacaocarta2);
+	printf("PopulaC'C#o carta 2 vence", populacaocarta1, populacaocarta2);
+
+	vitoriaA = areacidadecarta1 > areacidadecarta2;
+	vitoriaB = areacidadecarta1 < areacidadecarta2;
+
+	printf("Crea cidade carta 1 vence", areacidadecarta1, areacidadecarta2);
+	printf("Crea cidade carta 2 vence", areacidadecarta1, areacidadecarta2);
+
+	vitoriaA = PIBcarta1 < PIBcarta2;
+	vitoriaA = PIBcarta1 > PIBcarta2;
+
+	printf("PIB carta 1 vence", PIBcarta1, PIBcarta2);
+	printf("PIB carta 2 vence", PIBcarta1, PIBcarta2);
+
+	vitoriaA = densidadepopulacionalcarta1 < densidadepopulacionalcarta2;
+	vitoriaB = densidadepopulacionalcarta1 > densidadepopulacionalcarta2;
+
+	printf("Densidade populacional carta 1 vence", densidadepopulacionalcarta1, densidadepopulacionalcarta2);
+	printf("Densidade populacional carta 2 vence", densidadepopulacionalcarta1, densidadepopulacionalcarta2);
+
+	vitoriaA = pontosturisticoscarta1 > pontosturisticoscarta2;
+	vitoriaA = pontosturisticoscarta1 < pontosturisticoscarta2;
+
+	printf("Pontos turC-stivos carta 1 vence", pontosturisticoscarta1, pontosturisticoscarta2);
+	printf("Pontos turC-stivos carta 2 vence", pontosturisticoscarta1, pontosturisticoscarta2);
+
+	vitoriaA = PIBpercapitacarta1 > PIBpercapitacarta2;
+	vitoriaA = PIBpercapitacarta1 < PIBpercapitacarta2;
+
+	printf("PIB per capita carta 1 vence", PIBpercapitacarta1, PIBpercapitacarta2);
+	printf("PIB per capita carta 2 vence", PIBpercapitacarta1, PIBpercapitacarta2);
+
+	vitoriaA = superpodercarta1 > superpodercarta2;
+	vitoriaA = superpodercarta1 < superpodercarta2;
+
+	printf("Super poder carta 1 vence", superpodercarta1, superpodercarta2);
+	printf("Super poder carta 2 vence", superpodercarta1, superpodercarta2);
+
+
+	return 0;
+
+}
