@@ -1,0 +1,67 @@
+Jogo de Xadrez
+
+#include<stdio.h>
+
+int main(){
+    
+    int i, j;
+    int opcao;
+    
+    printf("***Jogo de Xadrez***\n");
+    printf("Escolha uma opção\n");
+    printf("1 - Torre: anda até 5 casas\n");
+    printf("2 - Bispo: anda até 5 casas\n");
+    printf("3 - Rainha: anda até 8 casas\n");
+    printf("4 - Cavalo: anda em L\n");
+    scanf("%d", &opcao);
+    
+    if(opcao == 1){
+    
+        for(i = 1; i <= 5; i++){
+        printf("Digite quantas casas deseja andar:\n");
+        scanf("%d", &i);
+        printf("Torre %d casas para a direita\n", i);
+    
+    }
+    }
+    
+     
+    if(opcao == 2){
+    
+        for(i = 1; i <= 5; i++){
+        printf("Digite quantas casas deseja andar:\n");
+        scanf("%d", &i);
+        printf("Bispo %d casas para a direita\n", i);
+    }
+    }
+    
+    if(opcao == 3){
+        
+        for(i = 1; i <= 8; i++){
+        printf("Digite quantas casas deseja andar:\n");
+        scanf("%d", &i);
+        printf("Rainha %d casas para a direita\n", i);
+    }
+    }
+    
+    if(opcao == 4){
+        
+        for(i = 1; i <= 2; i++){
+            printf("Digite quantas casas deseja andar\n");
+            scanf("%d", &i);
+            printf("Cavalo %d casas para baixo\n", i);
+        }
+        
+        for(j = 1; j <= i; j++){
+            printf("Digite quantas casas deseja andar\n");
+            scanf("%d", &j);
+            printf("Cavalo %d casas para esquerda\n", j);
+            
+            
+        }
+        printf("Cavalo %d casas para baixo e %d casas para esquerda\n", i , j);
+    }
+    
+    
+    return 0;
+}
