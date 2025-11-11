@@ -1,0 +1,63 @@
+JavaScript +
+
+alert("Qual o dia da semana?");
+let fimDeSemana = "Sabado";
+let segundoDia = "Domingo";
+let diaDaSemana = prompt("Digite o dia da semana");
+
+if (diaDaSemana == fimDeSemana){
+    alert("Bom final de semana!");
+}else if (diaDaSemana == segundoDia){
+    alert("Bom final de semana!");
+}else{
+    alert("Boa semana!");
+}
+
+///////
+
+alert("Informativo de números"); 
+let numero = prompt("Digite um número");
+
+if (numero > 0){
+    alert("é positivo");
+}else if (numero < 0){
+    alert("é negativo");
+}
+
+/////////
+
+alert("Pontuação no jogo"); 
+let pontuacaoTotal = prompt("Digite a sua pontuação final");
+
+if (pontuacaoTotal >= 100){
+    alert("Parabén, você venceu!");
+}else{
+    alert("Tente novamente para vencer");
+}
+
+////////////
+
+alert("Bem vindo a contagem progressiva!");
+let final = 10
+let contagem = prompt("Digite um número: ");
+
+
+while(contagem <= final){
+    alert(`${contagem}`);
+    contagem++;
+}
+
+/////////////
+
+alert("Bem vindo a contagem regressiva!");
+let contagem = prompt("Digite um número: ");
+
+
+while(contagem >= 0 ){
+    alert(`${contagem}`);
+    contagem--;
+
+}
+
+//////////
+
